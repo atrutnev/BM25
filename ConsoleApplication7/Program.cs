@@ -61,7 +61,7 @@ namespace ConsoleApplication7
 
             foreach (var item in list)
             {
-                //File.WriteAllLines("textWords.txt", list);
+                File.WriteAllLines("textWords.txt", list);
             }
             
             Console.WriteLine("Слов в тексте - {0}", wordsQuantity);
