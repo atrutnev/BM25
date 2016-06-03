@@ -44,7 +44,7 @@ namespace ConsoleApplication7
                 File.WriteAllLines("textSentences.txt", listSentences);
             }
 
-            var textSentences = File.ReadAllText("2.txt");
+            var textSentences = File.ReadAllText("textSentences.txt");
             var regexWords = new Regex("\\w+(?=\\W)");
             var words =
                 regexWords.Matches(textSentences)
@@ -55,6 +55,7 @@ namespace ConsoleApplication7
                     .ToList();
 
             var list = words
+                            
                     .ToArray();
 
             int wordsQuantity = list.Count();
